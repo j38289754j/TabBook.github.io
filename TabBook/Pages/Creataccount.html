@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAB 書店</title>
+    <link rel="stylesheet" href="../Assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../Assets/css/style.css">
+    <link rel="stylesheet" href="../Assets/css/Index.css">
+    <link rel="stylesheet" href="../Assets/css/Goods_information.css">
+    <link rel="stylesheet" href="../Assets/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.9.2/themes/smoothness/jquery-ui.css" />
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+</head>
+<body class="bg-dark">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../Assets/image/logo (1).png" class="logo" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link"  href="Goods.html">商品列表</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Hot.html">熱門商品</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="New.html">最新商品</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="AboutUs.html" >關於我們</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="Member.html" >會員專區</a>
+                    </li>
+                    <li align="center">
+                        <form action="" method="post">
+                            <input type="text" name="" id="">
+                            <input type="submit" value="搜尋" class="btn btn-outline-success">
+                        </form>
+                    </li> 
+                  </ul>
+                </div>
+                <div class="nav-title-member" id="movelocal">
+                    <a href="shopcar.html" target="_blank">
+                    <img src="../Assets/image/carts.png" class="logo" alt="./Pages/shopcar.html">
+                    </a>
+                    &nbsp; &nbsp; &nbsp; 
+                    <a href="javascript: $('#anly001').dialog({autoOpen: true, width: '400', height: 'auto', resizable: false});">
+                        <button class="btn  btn-outline-primary">會員登入</button>
+                    </a>
+                </div>
+              </div>
+        </nav>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="height: 50%px;">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../Assets/image/test2.png" class="d-block imagesizetest" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Assets/image/test3.png" class="d-block imagesizetest" alt="">
+                </div>               
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- 登入表單開始 -->
+        <div title="會員登入" id="anly001" class="log dialog">
+            <form action="" method="post">
+                帳號 <input type="text" name="" id=""><br><br>
+                密碼 <input type="password" name="" id=""><br><br>
+                <div align="right">
+                    <input type="reset" value="重設" class="btn btn-danger">
+                    <input type="submit" value="登入" class="btn btn-success">
+                </div>
+                <br>
+                還不是會員？ 註冊
+            </form>
+        </div>
+        <!-- 登入表單結束 -->
+    </header>
+    <br><br>
+     <div class="container">
+         <div class="row">
+             <div class="col goods" align="center">
+                 <h2>
+                    會員註冊<hr/>
+                 </h2>
+                 <form action="" method="post">
+                    姓名 <input type="text" name="" id=""><br><br>
+                    帳號 <input type="text" name="" id=""><br><br>
+                    信箱 <input type="email" name="" id=""><br><br>
+                    密碼 <input type="password" name="" id=""><br><br>
+                    再次確認 <input type="password" name="" id=""><br><br>
+                    <input type="submit" value="註冊">
+                 </form>
+             </div>
+         </div>
+     </div><br><br>
+</body>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                Copyright 2022 BY 羅宇陽 梁峻瑋 吳陳豪 鄭家瑋
+            </div>
+        </div>
+    </div>
+</footer>
+</html>

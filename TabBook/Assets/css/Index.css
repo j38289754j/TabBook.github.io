@@ -1,0 +1,64 @@
+.shop {
+    position: fixed;
+    top: 300px;
+    left: 400px;
+}
+
+.ball {
+    position: fixed;
+    left: 32px;
+    bottom: 22px;
+    z-index: 200;
+    transition: all 0.4s cubic-bezier(.25,1.48,.83,-0.11);
+}
+
+.inner {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: rgb(0, 160, 220);
+    transition: all 0.4s linear;
+}
+
+.cart {
+    position: fixed;
+    bottom: 22px;
+    left: 32px;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(0, 160, 220);
+    color: rgb(255, 255, 255);
+}
+
+.item_header{
+    display: flex;
+    width: 1000px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+.item_header div{
+    width: 200px;
+    color: #888;
+    line-height: 30px;
+}
+.item_header .item_name{
+    width: 50%;
+}
+.item_body{
+    margin-top: 20px;
+    height: 100px;
+    align-items: center;    
+}
+.item_name img{
+    width: 80px;
+    height: 80px;
+    border-radius: 3px;
+    /* margin-top: 10px; */
+    float: left;
+}
+.item_name .name{
+    margin-left: 100px;
+    margin-top: 20px;
+} 

@@ -1,0 +1,352 @@
+body{
+    background-color: rgba(33, 37, 41);
+    color: antiquewhite;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+
+}
+
+
+.nav-title ul {           /* 導覽列整體設定*/
+    
+    margin: 0 auto;             /* 取消外距，設定為0*/
+    padding: 4px;          /* 內部距離，設定為4px*/
+    text-align: center;    /* 文字置中*/
+    
+}
+.nav-title ul li {        /* 按鈕個別設定*/
+    border-style:solid;
+    border-color:#ffffff;
+    color: rgb(255, 255, 255);
+    border-width:3px;
+    list-style-type: none; /* 取消前面的小黑點*/
+    display: inline;       /* 成一行排列*/
+    margin: 25px;         /* 外距設定為0.5px*/
+    padding: 8px;
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+    width:150px;
+    height:60px;
+    vertical-align: top;
+}
+.nav-title ul li:hover{
+    cursor: pointer;
+    background-color: rgb(195, 195, 195);
+    color: rgb(0, 0, 0);
+    max-height: 200px;
+    overflow: visible;
+}
+
+
+.nav-title-member {
+    position: absolute;
+
+    top:14%;
+    left:77vw;
+    font-size: 25px;
+    color:#FFFFFF;
+    font-family: "微軟正黑體";
+    transition: 0.3s;
+}
+
+
+.nav-title-member ul li{
+
+
+    list-style-type: none;
+    border-style:solid;
+    border-color:#ffffff;
+    color: rgb(255, 255, 255);
+    border-width:3px;
+    margin: 25px;         /* 外距設定為0.5px*/
+    padding: 18px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.nav-title-member ul li:hover{
+    cursor: pointer;
+    background-color: rgb(195, 195, 195);
+    color: rgb(0, 0, 0);
+    max-height: 200px;
+    overflow: visible;
+}
+
+.nav-title-member ul button{
+
+
+    list-style-type: none;
+    border-style:solid;
+    border-color:#ffffff;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    border-width:3px;
+    margin: 25px;         /* 外距設定為0.5px*/
+    padding: 18px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.nav-title-member ul button:hover{
+    cursor: pointer;
+    background-color: rgb(195, 195, 195);
+    color: rgb(0, 0, 0);
+    max-height: 200px;
+    overflow: visible;
+}
+
+.imagesizetest {
+    height: 500px;
+    width: 100%;
+    display:block; margin:auto;
+
+}
+
+.topbtn{
+	border-radius: 10%;
+	background: #fee528;
+	position: fixed;
+	right: 10%;
+	bottom: 50px;
+    z-index: 2;
+    color:black;
+}
+.topbtn:hover{
+
+	background: #fff291;
+
+    color:black;
+}
+
+
+
+
+
+
+
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ---CSS reset is above--- */
+
+*{
+	box-sizing: border-box;
+}
+
+.header{
+	width: 100%;
+	height: 80px;
+	background: #f6a170;
+	color:white;
+	font-size: 36px;
+	padding-top: 20px;
+	padding-left: 30px;
+	position:fixed;
+	top:0;
+	z-index: 2;
+}
+
+.box{
+	border-radius: 10%;
+	background: #fee528;
+	position: fixed;
+	right:50px;
+	bottom: 30px;
+  z-index: 2;
+}
+
+.box a{
+	display: block;
+	width: 70px;
+	height: 70px;
+	padding:25px 15px;
+	font-size: 20px;
+	text-decoration: none;
+	color:white;
+}
+
+.productList{
+    list-style-type: none;
+	width: 1300px;
+	margin: 120px auto;
+	
+
+}
+
+.productList img{
+	width: 300px;
+    height: 300px;
+	margin-top: 30px;
+	margin-left:30px;
+
+}
+
+.productList li{
+    list-style-type: none;
+	position: relative;
+	float:left;
+	width: 380px;
+	height: 450px;
+	border: 1px dotted #efc7c1;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	padding-right: 5px;
+	padding-left: 10px;
+}
+
+.productList .timelimit{
+	position: absolute;
+	top:0;
+	left:0;
+	background: #b300ff;
+	color:#fff;
+	padding:8px;
+
+}
+.productList .hot{
+	position: absolute;
+	top:0;
+	left:0;
+	background: #ff4c00;
+	color:#fff;
+	padding:8px;
+
+}
+.productList .sale{
+	position: absolute;
+	top:0;
+	left:0;
+	background: #267d11;
+	color:#fff;
+	padding:8px;
+
+}
+.productList .new{
+	position: absolute;
+	top:0;
+	left:0;
+	background: #fff200;
+	color:rgb(255, 0, 0);
+	padding:8px;
+
+}
+.productList li h2{
+	font-weight: bold;
+	color: #f3b500;
+	margin-bottom: 10px;
+	margin-top: 10px;
+    margin-left: 29px;
+}
+
+.productList li span{
+	color: #ff0059;
+	font-size: 20px;
+    margin-left: 29px;
+   
+}
+.productList li button{
+	color: #ffffff;
+    background-color: crimson;
+	font-size: 20px;
+    margin-left: 29px;
+    margin-bottom: 10px;
+}
+.productList li button:focus{
+	outline: none !important;
+}
+
+
+
+.cartQuantity{
+    position:absolute;
+    width: 25px;
+    height: 25px;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 93%;
+    bottom: 10%;
+    position:fixed;
+    background-color: #ff0000;
+  }
+
+
+.goodaboutdiv{
+    width: 75%;
+    margin-left: 220px;
+    margin-top: 100px;
+    height: 450px;
+}
+
+.html1salesimg img{
+    float:left;
+
+	width: 300px;
+    height: 300px;
+	margin-top: 2%;
+	margin-left:20%;
+
+}
+
+.mainpage{
+	float: right;
+	font-family: "Montserrat", "Microsoft Yahei";
+	margin-right: 15%;
+    margin-top: 2%;
+
+}
+
+.content{
+	background-color: #A16F3A;
+	width: 50%;
+	margin-left: 430px;
+	margin-top: 50px;
+}
+
+
+footer {
+    text-align: center;
+    color: rgb(255, 247, 0);
+    background-color: rgb(0, 0, 0);
+    height: 20px;
+    line-height: 20px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+}
+
+.FB {
+    transition: 1s ease;
+}
+
+.FB:hover {
+    /*這可以向左轉向45度*/
+    margin-bottom: 10px;
+    margin-top: 30px;
+    -webkit-transform: rotate(720deg);
+    opacity: 80%;
+    width: 50px;
+    height: 50px;
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAB 書店</title>
+    <link rel="stylesheet" href="../Assets/css/bootstrap.css">
+    <link rel="stylesheet" href="../Assets/css/style.css">
+    <link rel="stylesheet" href="../Assets/css/Index.css">
+    <link rel="stylesheet" href="../Assets/css/Goods_information.css">
+    <link rel="stylesheet" href="../Assets/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.9.2/themes/smoothness/jquery-ui.css" />
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+</head>
+<body class="bg-dark">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../Assets/image/logo (1).png" class="logo" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link"  href="Goods.html">商品列表</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Hot.html">熱門商品</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="New.html">最新商品</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="AboutUs.html" >關於我們</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="Member.html" >會員專區</a>
+                    </li>
+                    <li align="center">
+                        <form action="" method="post">
+                            <input type="text" name="" id="">
+                            <input type="submit" value="搜尋" class="btn btn-outline-success">
+                        </form>
+                    </li> 
+                  </ul>
+                </div>
+                <div class="nav-title-member" id="movelocal">
+                    <a href="shopcar.html" target="_blank">
+                    <img src="../Assets/image/carts.png" class="logo" alt="./Pages/shopcar.html">
+                    </a>
+                    &nbsp; &nbsp; &nbsp; 
+                    <a href="javascript: $('#anly001').dialog({autoOpen: true, width: '400', height: 'auto', resizable: false});">
+                        <button class="btn  btn-outline-primary">會員登入</button>
+                    </a>
+                </div>
+              </div>
+        </nav>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="height: 50%px;">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../Assets/image/test2.png" class="d-block imagesizetest" alt="">
+                </div>
+                <div class="carousel-item">
+                    <img src="../Assets/image/test3.png" class="d-block imagesizetest" alt="">
+                </div>               
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- 登入表單開始 -->
+        <div title="會員登入" id="anly001" class="log dialog">
+            <form action="" method="post">
+                帳號 <input type="text" name="" id=""><br><br>
+                密碼 <input type="password" name="" id=""><br><br>
+                <div align="right">
+                    <input type="reset" value="重設" class="btn btn-danger">
+                    <input type="submit" value="登入" class="btn btn-success">
+                </div>
+                <br>
+                還不是會員？ <a class="nav-link" href="Creataccount.html" >註冊</a>
+            </form>
+        </div>
+        <!-- 登入表單結束 -->
+    </header>
+    <br><br>
+     <div class="container">
+         <div class="row">
+            <div class="col goods" align="center">
+                <img src="../Assets/image/hobbit.png" class="goods_img" alt=""><br>
+            </div>
+            <div class="col goods">
+                <H2>哈比人</H2><br>
+                簡介：<br>
+                <p>
+                    托爾金以融合童話與傳奇小說的手法，通過小說呈現出豐富的想像力、華麗而詭譎的壯麗場景，以及神祕迷魅的中土大陸世界。
+                </p>
+                價格：480<br>
+                庫存：99<br>
+                <form action="" method="post">
+                    <input type="number" name="" id="" min="0" class="goods_inp">&nbsp;&nbsp;
+                    <input type="submit" value="放入購物車" class="btn btn-danger">
+                </form>
+            </div>
+         </div>
+         <div class="col goods comment_area">
+             <form action="" method="post">
+                 <div class="rating">
+                    <input type="radio" id="star5" name="rating" value="5" hidden/>
+                    <label for="star5"></label>
+                    <input type="radio" id="star4" name="rating" value="4" hidden/>
+                    <label for="star4"></label>
+                    <input type="radio" id="star3" name="rating" value="3" hidden/>
+                    <label for="star3"></label>
+                    <input type="radio" id="star2" name="rating" value="2" hidden/>
+                    <label for="star2"></label>
+                    <input type="radio" id="star1" name="rating" value="1" hidden/>
+                    <label for="star1"></label>   
+                </div>
+                主旨 <input type="text" name="" id=""><br>
+                內容<br>
+                 <textarea name="" id="" cols="30" rows="10"></textarea><br>
+                 <input type="submit" value="留言" class="btn btn-danger">
+             </form>
+         </div>
+         <div class="row goods">
+             <h2 align="center">
+                 留言板
+             </h2><hr>
+             <div class="container">
+                 <div class="row">
+                     <div class="col  comment_area">
+                         留言人：鄭家瑋 (ted372339)<br>
+                         分數：★★<br>
+                         留言時間：2022/06/01 12:00 <br>
+                         主旨：爛貨<br>
+                         內容：<br>
+                         <p>
+                            書都太過於破舊，糞坑公司
+                         </p>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div><br><br><br>
+     <div class="goods" align="center">
+        本商品瀏覽人次：0000000次<br><br>
+     </div>
+     
+</body>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                Copyright 2022 BY 羅宇陽 梁峻瑋 吳陳豪 鄭家瑋
+            </div>
+        </div>
+    </div>
+</footer>
+</html>

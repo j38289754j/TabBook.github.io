@@ -1,0 +1,58 @@
+.goods{
+    color: white;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.logo{
+    width: 3rem;
+    height: auto;
+}
+.log{
+    width: 100px;
+}
+.dialog{
+    max-width: 100rem;
+    padding: 0.5em; 
+    font-family: 微軟正黑體; 
+    font-size: 1.17em; 
+    line-height: 1.5em; 
+    letter-spacing: 0.1em; 
+    display: block; 
+    text-align: justify; 
+    display: none;
+}
+.goods_img{
+    border-radius: 25%;
+    width: 15rem;
+}
+.goods_inp{
+    width: 5rem;
+}
+.comment_area{
+    margin-left: 16.5%;
+}
+.rating {
+    font-size: 0;
+    display: table;
+    margin-top:30px; 
+}
+.rating > label {
+    color:  #FF7F50;
+    float: right;
+}
+.rating > label:before {
+    font-size: 2rem;
+    line-height: 1em;
+    display: inline-block;
+    content: "★";
+}
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color:  #FF0000;
+}
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label {
+    opacity: 0.5;
+}

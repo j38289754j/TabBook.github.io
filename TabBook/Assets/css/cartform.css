@@ -1,0 +1,20 @@
+/*
+* @Author: xshis
+* @Date:   2018-05-23 11:45:25
+* @Last Modified by:   xshis
+* @Last Modified time: 2018-05-23 11:45:28
+*/
+
+
+.cartform {
+    font-family: 微軟雅黑;
+    position: fixed;
+    background-color: white;
+    top: 20%;
+    left: 30%;
+    overflow:auto;
+    height: 700px;
+    border-radius: 1em;
+    text-align: center;
+    z-index: 999;
+}
